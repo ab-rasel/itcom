@@ -407,6 +407,7 @@ $golden_layout: layout( (1 1.618 2.618) .1 fluid float split);
             text-transform: capitalize;
             color: #fff;
             border: none;
+            padding:0;
             &:hover{
                 color: #E79A5F;
             }
@@ -566,7 +567,6 @@ $golden_layout: layout( (1 1.618 2.618) .1 fluid float split);
     width: 100%;
     height: auto;
     padding: 80px 0;
-    background: #e5e5e5;
     .fatureContent{
         position: relative;
         h2{
@@ -576,6 +576,7 @@ $golden_layout: layout( (1 1.618 2.618) .1 fluid float split);
             font-weight: 100;
             line-height: 1.263;
             text-align: center;
+            margin-top: 27px;
             margin-bottom: 26px;
         }
         p{
@@ -599,7 +600,7 @@ $golden_layout: layout( (1 1.618 2.618) .1 fluid float split);
             &:first-child{
                 background: #009DE0;
                 &:hover{
-                    background: #008DE0;
+                    background: #007DE0;
                 }
             }
         }
@@ -614,4 +615,42 @@ $golden_layout: layout( (1 1.618 2.618) .1 fluid float split);
     }
 }
 
-/*-------------fature start ---------------*/
+/*-------------fature end ---------------*/
+
+/*-------------start symple experiment ---------------*/
+.experimentSec{
+    position: relative;
+    width: 100%;
+    height: auto;
+    background: #00415D;
+    padding: 100px 0;
+    .expTitle h2{
+        position: relative;
+        color: #fff;
+        font-size: 40px;
+        font-weight: 100;
+        margin-bottom: 40px;
+    }
+    .slideBtn a{
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #fff;
+        border: 2px solid #009DE0;
+        padding: 10px 30px;
+        border-radius: 4px;
+        margin-right: 20px;
+        transition: all ease 500ms;
+        &:first-child{
+            background: #009DE0;
+            &:hover{
+                background: transparent;
+            }
+        }
+        &:hover{
+            background: #009DE0;
+        }
+
+    }
+}
+/*-------------end symple experiment ---------------*/

@@ -309,7 +309,8 @@
   .footerBootm .mainMenu.footerMenu ul li a {
     text-transform: capitalize;
     color: #fff;
-    border: none; }
+    border: none;
+    padding: 0; }
     .footerBootm .mainMenu.footerMenu ul li a:hover {
       color: #E79A5F; }
 
@@ -436,8 +437,7 @@
   position: relative;
   width: 100%;
   height: auto;
-  padding: 80px 0;
-  background: #e5e5e5; }
+  padding: 80px 0; }
   .fatureSection .fatureContent {
     position: relative; }
     .fatureSection .fatureContent h2 {
@@ -447,6 +447,7 @@
       font-weight: 100;
       line-height: 1.263;
       text-align: center;
+      margin-top: 27px;
       margin-bottom: 26px; }
     .fatureSection .fatureContent p {
       color: #696f72;
@@ -468,7 +469,7 @@
       .fatureSection .fatureContent a:first-child {
         background: #009DE0; }
         .fatureSection .fatureContent a:first-child:hover {
-          background: #008DE0; }
+          background: #007DE0; }
   .fatureSection .fatureImg {
     width: 100%;
     height: auto; }
@@ -476,4 +477,35 @@
       width: 100%;
       height: 100%; }
 
-/*-------------fature start ---------------*/
+/*-------------fature end ---------------*/
+/*-------------start symple experiment ---------------*/
+.experimentSec {
+  position: relative;
+  width: 100%;
+  height: auto;
+  background: #00415D;
+  padding: 100px 0; }
+  .experimentSec .expTitle h2 {
+    position: relative;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 100;
+    margin-bottom: 40px; }
+  .experimentSec .slideBtn a {
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    border: 2px solid #009DE0;
+    padding: 10px 30px;
+    border-radius: 4px;
+    margin-right: 20px;
+    transition: all ease 500ms; }
+    .experimentSec .slideBtn a:first-child {
+      background: #009DE0; }
+      .experimentSec .slideBtn a:first-child:hover {
+        background: transparent; }
+    .experimentSec .slideBtn a:hover {
+      background: #009DE0; }
+
+/*-------------end symple experiment ---------------*/
