@@ -1,0 +1,39 @@
+@import '../bower_components/susy/sass/susy';
+@import '../bower_components/normalize-scss/_normalize.scss';
+@import './preset2.scss';
+
+.serviceSec {
+    padding: 50px 0;
+    @include container;
+    .singleService{
+        @include span(3);
+        i{
+            font-size: 30px;
+            font-family: 'fontawesome';
+            color: $color-primary-500;
+        }
+        h2{
+            font-size: 22px;
+            font-weight: 400;
+            text-transform: capitalize;
+            margin: 12px 0;
+        }
+        p{
+            font-family: "Open Sans",Arial,Helvetica,"Nimbus Sans L",sans-serif;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: normal;
+            line-height: 20px;
+            color: #787878;
+        }
+    }
+    .singleService1{
+        @include span(3);
+    }
+    .singleService2{
+        @include span(3);
+    }
+    .singleService3{
+        @include span(3 of last);
+    }
+}

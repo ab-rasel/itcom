@@ -17,7 +17,7 @@ flow: ltr, // ltr | rtl
 output: float, // float | isolate
 math: fluid, // fluid | static (requires column-width)
 column-width: false, // false | value
-container: 1366px, // length or % | auto
+container: 1168px, // length or % | auto
 container-position: center, // left | center | right | <length> [*2] (grid padding)
 last-flow: to, //from | to
 columns: 12,
@@ -77,14 +77,17 @@ ul, li {
 /*  ------------------------------------------
     Colour codes! Indigo - Pinks
     ------------------------------------------  */
-$color-primary-100: #C5CAE9;
-$color-primary-500: #3F51B5;
-$color-primary-700: #303F9F;
-$color-secondary-200: #F48FB1;
-$color-secondary-100: #F8BBD0;
-$color-secondary-400: #EC407A;
+$color-primary-100: #e0f7fa;
+$color-primary-200: #80deea;
+$color-primary-300: #4dd0e1;
+$color-primary-500: #00bcd4;
+$color-primary-700: #0097a7;
 
-$color-gray-900-darker: #212121;
+$color-secondary-300: #4fc3f7;
+$color-secondary-600: #039be5;
+$color-secondary-400: #29b6f6;
+
+$color-white-900: #fff;
 $color-gray-700-dark: #616161;
 $color-gray-500: #9E9E9E;
 $color-gray-300-light: #E0E0E0;
@@ -126,6 +129,9 @@ $desktop-a: 48em;
     border: 1px dashed red;
     //background-color: #EFE; //OR
 }
+a{
+    color: $color-white-900;
+}
 .wrap {
     @include container;
 }
@@ -135,6 +141,10 @@ $desktop-a: 48em;
     padding: 0;
 }
 
+*{
+    margin: 0;
+    padding: 0;
+}
 body{
     margin:0;
     padding: 0;
@@ -177,10 +187,8 @@ nav,ul,li,a,h1,h2,h3,h4,h5,h6,table,tr,td,p,span,label{
 .noMarginRight{
 	margin-right: 0 !important;
 }
-
 /*========================
 /Margin & Padding Setting End here 
 ==========================*/
-
 
 
