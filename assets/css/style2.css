@@ -837,6 +837,9 @@ nav, ul, li, a, h1, h2, h3, h4, h5, h6, table, tr, td, p, span, label {
 .noMarginRight {
   margin-right: 0 !important; }
 
+.paddingLeft {
+  padding-left: 50px; }
+
 /*========================
 /Margin & Padding Setting End here 
 ==========================*/
@@ -881,3 +884,37 @@ nav, ul, li, a, h1, h2, h3, h4, h5, h6, table, tr, td, p, span, label {
     width: 23.72881%;
     float: right;
     margin-right: 0; }
+
+.ourWork {
+  position: relative; }
+  .ourWork .mainWork {
+    padding: 50px;
+    position: relative; }
+    .ourWork .mainWork:before {
+      border-bottom: 1px dotted #ddd;
+      bottom: -158px;
+      content: "";
+      height: 1px;
+      left: 0;
+      position: absolute;
+      width: 90%; }
+    .ourWork .mainWork .workImg {
+      position: relative;
+      width: 100%;
+      height: auto;
+      margin: 10px 0; }
+      .ourWork .mainWork .workImg img {
+        width: auto;
+        height: 100%; }
+    .ourWork .mainWork .workContent h2 {
+      font-size: 1.125em;
+      font-weight: 700;
+      color: #418FDB;
+      margin-bottom: 12px;
+      margin-top: 8px; }
+    .ourWork .mainWork p {
+      font-size: 16px;
+      font-weight: normal;
+      line-height: 1.6;
+      text-rendering: optimizelegibility;
+      text-align: justify; }
