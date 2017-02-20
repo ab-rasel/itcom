@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i');
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script&subset=latin-ext');
+
+@import '../bower_components/susy/sass/susy';
+@import '../bower_components/normalize-scss/_normalize.scss';
+
+//@import '../bower_components/bootstrap-sass/assets/stylesheets/bootstrap'; // Boostrap
+// Resets
+//@import '_custom-bootstrap.scss';
+
+/*  ------------------------------------------
+    Susy settings
+    ------------------------------------------  */
+$susy: (
+flow: ltr, // ltr | rtl
+output: float, // float | isolate
+math: fluid, // fluid | static (requires column-width)
+column-width: false, // false | value
+container: 1168px, // length or % | auto
+container-position: center, // left | center | right | <length> [*2] (grid padding)
+last-flow: to, //from | to
+columns: 12,
+gutters: 1/4,
+gutter-position: after, // before | after | split | inside | inside-static (requires column-width)
+global-box-sizing: border-box, // content-box | border-box (affects inside/inside-static)
+debug: (
+image: hide, //hide | show
+color: rgba(#66f, .25),
+output: background, // background | overlay
+toggle: top left, //top left  | top right
+),
+use-custom: (
+background-image: true, // look for background-image mixin
+background-options: false, // look for background-size, -origin and -clip and other compass/bourbon mixins
+box-sizing: true, // look for custom bix sizing mixin
+clearfix: false, // true = look for internal clearfix before using micro clearfix
+rem: true, // look for rem mixin
+)
+);
+
+$gallery_layout: layout( 12 .125 fluid float after);
+
+$nav_layout: layout( 12 0 fluid float inside);
+
+$golden_layout: layout( (1 1.618 2.618) .1 fluid float split);
+/*  ------------------------------------------
+    It makes your life easy!
+    ------------------------------------------  */
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+ul, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+// nav {
+//   margin: 0px 0;
+//   text-align: center;
+//   li {
+//     background: #eee;
+//   }
+//   a {
+//     display: block;
+//     &:hover {
+//       background: #ddd;
+//     }
+//   }
+// }
+/*  ------------------------------------------
+    Colour codes! Indigo - Pinks
+    ------------------------------------------  */
+$color-primary-100: #e0f7fa;
+$color-primary-200: #80deea;
+$color-primary-300: #4dd0e1;
+$color-primary-500: #00bcd4;
+$color-primary-700: #0097a7;
+
+$color-secondary-300: #4fc3f7;
+$color-secondary-600: #039be5;
+$color-secondary-400: #29b6f6;
+
+$color-white-900: #fff;
+$color-gray-700-dark: #616161;
+$color-gray-500: #9E9E9E;
+$color-gray-300-light: #E0E0E0;
+$color-gray-100-lighter: #F5F5F5;
+$color-gray-50-lightest: #FAFAFA;
+
+//bootstrap colors
+// @gray-darker:  lighten(#000, 13.5%); // #222
+// @gray-dark:    lighten(#000, 20%);   // #333
+// @gray:         lighten(#000, 33.5%); // #555
+// @gray-light:   lighten(#000, 46.7%); // #777
+// @gray-lighter: lighten(#000, 93.5%); // #eee
+
+// @brand-primary: darken(#428bca, 6.5%); // #337ab7
+// @brand-success: #5cb85c;
+// @brand-info:    #5bc0de;
+// @brand-warning: #f0ad4e;
+// @brand-danger:  #d9534f;
+
+/*  ------------------------------------------
+    Breakpoints
+    ------------------------------------------  */
+// iPhone 6s plus 414px=25.9em         
+// .. Tablet Layout Pattern (20em=320px) (old iPhone)26em=414px 48em=768px(iPad)  
+$tablet-a: 27em;
+$tablet-b: 48em;
+// .. Desktop Layout Pattern
+$desktop-a: 48em;
+// .. Tablet Layout Pattern 20em=320px (old iPhone) 48em=768px(iPad)  
+/* 
+  @include susy-media($tablet-a $tablet-b) {
+  @include susy-media(min-width $desktop-a) { 
+*/
+
+/*  ------------------------------------------
+    Makes life easy code cont.
+    ------------------------------------------  */
+.debug {
+    border: 1px dashed red;
+    //background-color: #EFE; //OR
+}
+a{
+    color: $color-white-900;
+}
+.wrap {
+    @include container;
+}
+// wrap and content may together work
+*{
+    margin: 0;
+    padding: 0;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin:0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+a,a:hover,a:active,a:visited{
+    text-decoration: none;
+    outline-style: none;
+}
+nav,ul,li,a,h1,h2,h3,h4,h5,h6,table,tr,td,p,span,label{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+}
+/*=====================================
+/CommonSec
+======================================*/
+
+
+/*========================
+/Margin & Padding Setting Start here
+==========================*/
+.noPadding{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+.noPaddingLeft{
+    padding-left: 0 !important;
+}
+.noPaddingRight{
+    padding-right: 0 !important;
+}
+.noMargin {
+	margin-left: 0 !important;
+	margin-right: 0 !important;
+}
+.noMarginLeft{
+	margin-left: 0 !important;
+}
+.noMarginRight{
+	margin-right: 0 !important;
+}
+.paddingLeft{
+    padding-left: 50px;
+}
+/*========================
+/Margin & Padding Setting End here 
+==========================*/
+
+

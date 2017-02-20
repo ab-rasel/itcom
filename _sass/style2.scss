@@ -1,0 +1,85 @@
+@import '../bower_components/susy/sass/susy';
+@import '../bower_components/normalize-scss/_normalize.scss';
+@import './preset2.scss';
+
+.serviceSec {
+    padding: 50px 0;
+    @include container;
+    .singleService{
+        @include span(3);
+        i{
+            font-size: 30px;
+            font-family: 'fontawesome';
+            color: $color-primary-500;
+        }
+        h2{
+            font-size: 22px;
+            font-weight: 400;
+            text-transform: capitalize;
+            margin: 12px 0;
+        }
+        p{
+            font-family: "Open Sans",Arial,Helvetica,"Nimbus Sans L",sans-serif;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: normal;
+            line-height: 20px;
+            color: #787878;
+        }
+    }
+    .singleService1{
+        @include span(3);
+    }
+    .singleService2{
+        @include span(3);
+    }
+    .singleService3{
+        @include span(3 of last);
+    }
+}
+
+
+
+.ourWork{
+    position: relative;
+    .mainWork{
+        padding: 50px;
+        position: relative;
+        &:before{
+            border-bottom: 1px dotted #ddd;
+            bottom: -158px;
+            content: "";
+            height: 1px;
+            left: 0;
+            position: absolute;
+            width: 90%;
+        }
+
+        .workImg{
+            position: relative;
+            width: 100%;
+            height: auto;
+            margin: 10px 0;
+
+            img{
+                width: auto;
+                height: 100%;
+            }
+        }
+        .workContent h2{
+            font-size: 1.125em;
+            font-weight: 700;
+            color: #418FDB;
+            margin-bottom: 12px;
+            margin-top: 8px;
+        }
+        p{
+            font-size: 16px;
+            font-weight: normal;
+            line-height: 1.6;
+            text-rendering: optimizelegibility;
+            text-align: justify;
+        }
+    }
+}
+
